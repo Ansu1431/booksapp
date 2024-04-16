@@ -1,4 +1,4 @@
-import {Route,Routes} from "react-router";
+import {Route,Routes} from "react-router-dom";
 import HomePage from "./pages/Homepage/HomePage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import Navbar from "./pages/Navbar";
