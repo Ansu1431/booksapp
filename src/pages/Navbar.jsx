@@ -1,7 +1,9 @@
 import React from 'react'
 import './style.css'
 import { IoMenu } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
+    const navigate = useNavigate();
   return (
     <nav >
 
@@ -11,9 +13,9 @@ const Navbar = () => {
         <IoMenu size={24}/>
     </div>
     <ul id="sidemenu">
-    <li><a href="/explore">
+    <li><div  onClick={()=>{navigate('/explore')}}>
             Explore
-            </a></li>
+            </div></li>
         <li><a href="/">
             Home
             </a></li>
